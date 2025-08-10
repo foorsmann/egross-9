@@ -122,3 +122,6 @@
   min-width: auto; /* or 0 to fully reset */
 }
 
+.social-media-links svg {
+  vertical-align: middle;
+}
