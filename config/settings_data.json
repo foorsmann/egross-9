@@ -135,7 +135,7 @@
               "show_divider": true,
               "show_phone_numb": true,
               "show_email": false,
-              "show_social_links": false,
+              "show_social_links": true,
               "show_stores_page": false,
               "show_currency_switcher": true,
               "show_country_selector": false,
