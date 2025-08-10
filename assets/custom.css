@@ -122,3 +122,80 @@
   min-width: auto; /* or 0 to fully reset */
 }
 
+.social-media-links svg {
+  height: 1em;
+  width: auto;
+  vertical-align: baseline;
+}
+/* === Social media links: aliniere text + icon === */
+.social-media-links {
+  --sm-gap: 0.375rem;        /* ~6px, ajusteaza daca e nevoie */
+  --sm-color: #fff;          /* culoare implicita pe topbar */
+}
+
+.social-media-links .social-link {
+  display: inline-flex;       /* inlocuieste layoutul inline cu flex pentru aliniere stabila */
+  align-items: center;        /* centreaza vertical text + svg */
+  gap: var(--sm-gap);         /* spatiu intre label si icon */
+  line-height: 1;             /* elimina artefactele de baseline */
+  color: var(--sm-color);     /* permite control prin currentColor */
+}
+
+.social-media-links .social-label {
+  display: inline-flex;       /* aliniere verticala cu iconul */
+  align-items: center;
+  line-height: 1;             /* mentine inaltimea calculata strict din font-size */
+}
+
+.social-media-links .social-icon {
+  display: block;             /* elimina baseline-gap de la inline elements */
+  height: 1em;                /* EXACT inaltimea fontului curent => se potriveste cu textul */
+  width: 1em;                 /* patrat; daca vrei proportional, poti pune `auto`, dar patratul arata cel mai curat langa text */
+  flex: 0 0 1em;              /* rezerva fix spatiul iconului in linie */
+}
+
+@media (min-width: 768px) {
+  /* pastreaza comportamentul existent de centrare pe md daca e cazul */
+  .social-media-links.md\:justify-center {
+    justify-content: center;
+  }
+}
+
+/* Optional: efecte hover/focus discrete, fara sa afecteze layoutul */
+.social-media-links .social-link:focus-visible {
+  outline: 2px solid rgba(255,255,255,.6);
+  outline-offset: 2px;
+}
+.social-media-links .social-link:hover .social-icon {
+  transform: translateY(-0.5px);
+  transition: transform 120ms ease;
+}
+
+/* Reduce gap between social label and icon */
+.social-media-links {
+  --sm-gap: 0.1875rem;        /* ~3px */
+}
+
+.social-media-links .social-label {
+  padding-right: 0.25rem;     /* half the original 0.5rem */
+}
+
+/* Topbar divider between phone and social links */
+.topbar-divider {
+  display: inline-block;
+  width: 1px;
+  height: 1em;
+  background-color: rgba(255,255,255,0.4);
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
+
+.sf__topbar-inner .topbar-divider {
+  align-self: center;
+}
+
+@media (max-width: 639px) {
+  .topbar-divider {
+    display: none;
+  }
+}

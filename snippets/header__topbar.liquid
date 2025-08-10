@@ -43,6 +43,9 @@
               </a>
             {% endif %}
             {% if show_social_links %}
+              {% if show_phone_numb or show_email %}
+                <span class="topbar-divider" aria-hidden="true"></span>
+              {% endif %}
               {% render 'social-media-links', show_label: true %}
             {% endif %}
           </div>
