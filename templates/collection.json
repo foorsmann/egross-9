@@ -1,0 +1,141 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-page-header",
+      "blocks": {
+        "0e2f4cdc-52ea-4a81-8981-2c1da0f34854": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "0e2f4cdc-52ea-4a81-8981-2c1da0f34854"
+      ],
+      "settings": {
+        "container": "container-fluid",
+        "layout": "inside",
+        "header_height": "small",
+        "text_alignment": "center",
+        "vertical_alignment": "center",
+        "text_color": "dark",
+        "bg_color": "#ffffff",
+        "enable_parallax": false,
+        "upper_title": false,
+        "show_desc": false,
+        "collection_all_desc": ""
+      }
+    },
+    "main": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "26ef6509-772d-4c44-bd90-efc089bd9355": {
+          "type": "filter",
+          "settings": {
+            "design_filtergroup": "inrow",
+            "title": "Dimensiuni",
+            "filtergroup": "100cm,120cm,140cm",
+            "show_label": true,
+            "use_accordion": true,
+            "open_filtergroup": true
+          }
+        },
+        "e12de6da-eab8-4abe-967c-06d0d959a18a": {
+          "type": "filter",
+          "settings": {
+            "design_filtergroup": "color",
+            "title": "Culoare",
+            "filtergroup": "Blue, Red, White ,Black ,Pink ,Silver,Purple,Brown,Yellow,Grey,Green,Tan,Violet,Dark Grey,Beige,Light Blue, Dark Blue, Light Grey, Light Pink, Mint, Rose Gold, Night Blue, Copper, Coral, Rosy Brown, Alb, Negru, Albastru",
+            "show_label": true,
+            "use_accordion": true,
+            "open_filtergroup": true
+          }
+        },
+        "fa31a837-9c99-4c92-8cfe-0527ffbe7b15": {
+          "type": "filter",
+          "settings": {
+            "design_filtergroup": "button",
+            "title": "Pret",
+            "filtergroup": "0 - 100 lei,100 - 200 lei,200 - 300 lei,300 - 400 lei,400 - 500 lei,500 - 1000 lei, 1000+ lei",
+            "show_label": false,
+            "use_accordion": true,
+            "open_filtergroup": true
+          }
+        },
+        "4903963a-90f0-4fe1-be23-ee4f8749e483": {
+          "type": "filter",
+          "settings": {
+            "design_filtergroup": "inrow",
+            "title": "Brand",
+            "filtergroup": "ConceptSGM,Retrolie,Abby,Brook,Learts,Vagabond",
+            "show_label": false,
+            "use_accordion": false,
+            "open_filtergroup": true
+          }
+        },
+        "00b3badd-1613-4230-85d8-f87f04306aaa": {
+          "type": "filter",
+          "settings": {
+            "design_filtergroup": "inrow",
+            "title": "Tag",
+            "filtergroup": "Dress,Tops,Shirts,Fashion,Hats,Sandal,Belt,Bags,Snacker,Denim,ConceptSGM,Vagabond,Sunglasses, Beachwear,Vintage",
+            "show_label": false,
+            "use_accordion": true,
+            "open_filtergroup": true
+          }
+        }
+      },
+      "block_order": [
+        "26ef6509-772d-4c44-bd90-efc089bd9355",
+        "e12de6da-eab8-4abe-967c-06d0d959a18a",
+        "fa31a837-9c99-4c92-8cfe-0527ffbe7b15",
+        "4903963a-90f0-4fe1-be23-ee4f8749e483",
+        "00b3badd-1613-4230-85d8-f87f04306aaa"
+      ],
+      "settings": {
+        "container": "container",
+        "pagination_limit": 50,
+        "paginate_type": "infinite",
+        "show_sorting": true,
+        "show_filter": false,
+        "filters_type": "tags_filter",
+        "sidebar": "fixed",
+        "sidebar_title": "Filtre",
+        "limit_height_widget": false,
+        "limit_height": 300,
+        "change_product_variant_on_fitlering": true,
+        "show_product_count": true,
+        "collapsed_groups": "Brand, Vendor, Size, dimensiuni",
+        "color_swatches": "color,colour,couleur,farbe,culoare"
+      }
+    },
+    "recent-viewed": {
+      "type": "recent-viewed-products",
+      "settings": {
+        "container": "container",
+        "heading": "Vizualizate Recent",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": 30,
+        "enable_slider": true
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main",
+    "recent-viewed"
+  ]
+}
+
